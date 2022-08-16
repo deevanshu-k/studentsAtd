@@ -3,6 +3,7 @@ var express = require('express');
 var app = express();
 const ejs = require("ejs");
 const path = require("path");
+const router = require('./routes');
 
 
 var port = 80;
@@ -17,11 +18,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 
 // network routs
-app.get('/', (req, res) => {
-  
-    res.status(200).send('Hello world!');
-});
-
+app.use(router)
 
 
 // Error Handelling
