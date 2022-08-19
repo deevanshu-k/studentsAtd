@@ -1,9 +1,8 @@
 const { Router } = require('express');
+const studentRoute = require('./student.route');
 const router = Router();
 
-router.get('/', (req, res) => {
-    res.status(200).send('Hello world!');
-});
+router.use('/student', studentRoute);
 
 
 module.exports = router;

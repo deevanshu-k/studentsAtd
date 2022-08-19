@@ -4,12 +4,16 @@ var app = express();
 const ejs = require("ejs");
 const path = require("path");
 const router = require('./routes');
+const bodyparser = require('body-parser');
+
 
 
 var port = 80;
 var host = '127.0.0.1'
 
 
+app.use(bodyparser.urlencoded({ extended: false }));
+app.use(bodyparser.json());
 app.use('/static', express.static('static'));
 app.use(express.urlencoded());
 
@@ -18,7 +22,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 
 // network routs
-app.use(router)
+app.use('/api/v1',router)
 
 
 // Error Handelling
