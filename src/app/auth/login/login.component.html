@@ -1,1 +1,62 @@
-<p>login works!</p>
+<div class="maindiv container-fluid d-flex justify-content-center align-items-center bg-light">
+    <mat-card class="example-card p-4">
+        <div class="d-flex justify-content-center align-items-center" style="width: 100%;">
+            <mat-card-title>Login</mat-card-title>
+        </div>
+
+        <mat-card-content>
+            <div [formGroup]="student" *ngIf="userisStudent">
+                <mat-form-field class="example-full-width" appearance="fill" style="width: 100%;">
+                    <mat-label>Enrollement No</mat-label>
+                    <input matInput formControlName="enrollementno" placeholder="Ex. 0834CSX211XXX" required>
+                    <mat-error *ngIf="this.student.get('enrollementno')?.hasError('required')">
+                        Enrollement no is <strong>required !</strong>
+                    </mat-error>
+                    <mat-error
+                        *ngIf="!this.student.get('enrollementno')?.hasError('required') && !this.student.get('enrollementno')?.valid && this.student.get('enrollementno')?.touched">
+                        Enter valid <strong>enrollement no </strong>!</mat-error>
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width" appearance="fill" style="width: 100%;">
+                    <mat-label>Password</mat-label>
+                    <input matInput formControlName="password" placeholder="Ex. 0834CSX211XXX" required>
+                    <mat-error *ngIf="this.student.get('enrollementno')?.hasError('required')">
+                        Password is <strong>required !</strong>
+                    </mat-error>
+                    <mat-error
+                        *ngIf="!this.student.get('enrollementno')?.hasError('required') && !this.student.get('enrollementno')?.valid && this.student.get('enrollementno')?.touched">
+                        Enter valid <strong>password </strong>!</mat-error>
+                </mat-form-field>
+            </div>
+            <div [formGroup]="teacher" *ngIf="!userisStudent">
+                <mat-form-field class="example-full-width" appearance="fill" style="width: 100%;">
+                    <mat-label>Subject Code </mat-label>
+                    <input matInput formControlName="subjectcode" placeholder="Ex. BT-XXX" required>
+                    <mat-error *ngIf="this.teacher.get('subjectcode')?.hasError('required')">
+                        Subject code is <strong>required !</strong>
+                    </mat-error>
+                    <mat-error
+                        *ngIf="!this.teacher.get('subjectcode')?.hasError('required') && !this.teacher.get('subjectcode')?.valid && this.teacher.get('subjectcode')?.touched">
+                        Enter valid <strong>subject code </strong>!</mat-error>
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width" appearance="fill" style="width: 100%;">
+                    <mat-label>Password</mat-label>
+                    <input matInput formControlName="password" placeholder="Ex. sample@123456" required>
+                    <mat-error *ngIf="this.teacher.get('password')?.hasError('required')">
+                        Password is <strong>required !</strong>
+                    </mat-error>
+                    <mat-error
+                        *ngIf="!this.teacher.get('password')?.hasError('required') && !this.teacher.get('password')?.valid && this.teacher.get('password')?.touched">
+                        Password length must be in between<strong> 6-12 </strong></mat-error>
+                </mat-form-field>
+            </div>
+
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button style="width: 100%;" color="primary" *ngIf="userisStudent" [disabled]="!this.student.valid">Log in</button>
+            <button mat-raised-button style="width: 100%;" color="primary" *ngIf="!userisStudent" [disabled]="!this.teacher.valid">Log in</button>
+        </mat-card-actions>
+        <mat-card-subtitle>If you are {{userisStudent? 'teacher':'student'}} <strong (click)="userToggle()" style="cursor: pointer;">Login here!</strong></mat-card-subtitle>
+    </mat-card>
+</div>
