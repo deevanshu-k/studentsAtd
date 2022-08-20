@@ -5,13 +5,10 @@ const ejs = require("ejs");
 const path = require("path");
 const router = require('./routes');
 const bodyparser = require('body-parser');
-const studentinfo = require('./models/studentinfo')
+const teacherinfo = require('./models/teacher');
+const studentinfo = require('./models/studentinfo');
+const attendence = require('./models/attendence');
 
-// sequelize.sync().then(() => {
-//    console.log('Book table created successfully!');
-// }).catch((error) => {
-//    console.error('Unable to create table : ', error);
-// });
 
 var port = 80;
 var host = '127.0.0.1'
