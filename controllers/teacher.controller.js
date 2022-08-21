@@ -1,10 +1,12 @@
 const jwt = require('jsonwebtoken');
 const teacherinfo = require('../models/teacher')
+const studentinfo = require('../models/studentinfo')
+require('dotenv').config;
 
-const maxAge = 600000;
+const maxAge = 600;
 // const maxAge = 6000;
 const createToken = (id, user) => {
-    return jwt.sign({ id, user }, process.env.secret_key, {
+    return jwt.sign({ id, user }, process.env.secret_key_teacher ,{
         expiresIn: maxAge
     });
 };
@@ -49,4 +51,10 @@ module.exports.login = async (req,res) => {
         }
         res.status(400).send(body)
     }
+}
+
+module.exports.getstudents = async (req,res) => {
+    var data = await studentinfo.findAll();
+    console.log(data);
+    res.send(200);
 }

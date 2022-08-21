@@ -5,7 +5,7 @@ const URL = require('url');
 require('dotenv').config();
 
 
-const maxAge = 600000;
+const maxAge = 600;
 // const maxAge = 6000;
 const createToken = (id, user) => {
     return jwt.sign({ id, user }, process.env.secret_key, {
@@ -127,4 +127,9 @@ module.exports.login = async (req, res) => {
         }
         res.status(400).send(body)
     }
+}
+
+module.exports.getstudents = async (req,res) => {
+    var data = await studentinfo.findAll();
+    res.send(data)
 }

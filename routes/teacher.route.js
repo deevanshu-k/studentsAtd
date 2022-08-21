@@ -3,7 +3,7 @@ const { Router } = require('express');
 const router = Router();
 
 router.post('/login', teachercontroller.login);
-// router.post('/', studentController.create);
+// router.get('/',checkteacherauth, teachercontroller.getstudents);
 // router.get('/', studentController.get_byeno);
 
 

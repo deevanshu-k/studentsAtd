@@ -1,6 +1,7 @@
 require('dotenv').config();
 var express = require('express');
 var app = express();
+const cors = require('cors');
 const ejs = require("ejs");
 const path = require("path");
 const router = require('./routes');
@@ -9,7 +10,11 @@ const teacherinfo = require('./models/teacher');
 const studentinfo = require('./models/studentinfo');
 const attendence = require('./models/attendence');
 
+const corsOptions = {
+   origin: `http://localhost:4200`,
+   optionsSuccessStatus: 200
 
+};
 var port = 80;
 var host = '127.0.0.1'
 
@@ -18,6 +23,7 @@ app.use(bodyparser.urlencoded({ extended: false }));
 app.use(bodyparser.json());
 app.use('/static', express.static('static'));
 app.use(express.urlencoded());
+app.use(cors(corsOptions));
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
