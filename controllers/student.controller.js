@@ -130,9 +130,14 @@ module.exports.getstudents = async (req, res) => {
 
 module.exports.getstudentwithattendence = async (req, res) => {
     try {
+        console.log(req.query);
+        var enrollement_no =  req.body.enrollement_no;
+        if (!enrollement_no) {
+            enrollement_no = req.query.enrollement_no;
+        }
         var data = await studentinfo.findOne({
             where: {
-                enrollement_no: req.body.enrollement_no
+                enrollement_no: enrollement_no
             },
             include: ["attendences"]
         });
