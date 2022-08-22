@@ -1,0 +1,22 @@
+<mat-toolbar>
+    <button mat-icon-button class="example-icon" (click)="Drawer()" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>{{user}}</span>
+    <span class="spacer"></span>
+    <button mat-button [matMenuTriggerFor]="menu" style="width: 150px;">
+        {{name}}
+        <mat-icon>keyboard_arrow_down</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>account_circle</mat-icon>
+          {{enrollement_no}}
+        </button>
+        <button mat-menu-item class="" (click)="logOut()"
+        aria-label="Example icon-button with share icon">
+        <mat-icon>logout</mat-icon>
+        Logout
+      </button>
+      </mat-menu>
+</mat-toolbar>

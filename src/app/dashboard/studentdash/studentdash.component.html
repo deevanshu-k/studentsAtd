@@ -1,0 +1,11 @@
+<mat-drawer-container class="example-container" hasBackdrop="true" style="height: 100vh;">
+    <mat-drawer #drawer mode="over" style="width: 250px;">I'm a drawer</mat-drawer>
+    <mat-drawer-content>
+      <app-header (toggle)="drawer.toggle()" [user]="'Student'"></app-header>
+      <div class="container">
+      <app-atdcard></app-atdcard>
+      </div>
+    </mat-drawer-content>
+
+</mat-drawer-container>
+  

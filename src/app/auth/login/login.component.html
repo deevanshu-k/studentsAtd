@@ -54,8 +54,8 @@
 
         </mat-card-content>
         <mat-card-actions>
-            <button mat-raised-button style="width: 100%;" color="primary" *ngIf="userisStudent" [disabled]="!this.student.valid">Log in</button>
-            <button mat-raised-button style="width: 100%;" color="primary" *ngIf="!userisStudent" [disabled]="!this.teacher.valid">Log in</button>
+            <button mat-raised-button style="width: 100%;" color="primary" *ngIf="userisStudent" [disabled]="!this.student.valid" (click)="onSubmit()">Log in</button>
+            <button mat-raised-button style="width: 100%;" color="primary" *ngIf="!userisStudent" [disabled]="!this.teacher.valid" (click)="onSubmit()">Log in</button>
         </mat-card-actions>
         <mat-card-subtitle>If you are {{userisStudent? 'teacher':'student'}} <strong (click)="userToggle()" style="cursor: pointer;">Login here!</strong></mat-card-subtitle>
     </mat-card>
