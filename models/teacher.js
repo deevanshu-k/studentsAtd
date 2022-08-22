@@ -19,20 +19,5 @@ const teacherinfo = sequelize.define("teacherinfo", {
    }
 });
 
-teacherinfo.sync({force:false}).then(async() => {
-    console.log('teacher information table created!');
-    // await teacherinfo.create({
-    //     name : 'SuperUser',
-    //     subject_code : 'RT-111',
-    //     password: '$2b$10$zF/tqAtjtUHnqusAmKzAz.8D2arE9nDOMG3sUrAclgQCa5GsDl27S'
-    // });
-    // await teacherinfo.create({
-    //     name : 'sampleteacher',
-    //     subject_code : 'BT-201',
-    //     password: '12345678'
-    // })
-}).catch((error) => {
-    console.log(error);
-})
 
 module.exports = teacherinfo;

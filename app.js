@@ -6,9 +6,7 @@ const ejs = require("ejs");
 const path = require("path");
 const router = require('./routes');
 const bodyparser = require('body-parser');
-const teacherinfo = require('./models/teacher');
-const studentinfo = require('./models/studentinfo');
-const attendence = require('./models/attendence');
+const {studentinfo,attendence,teacherinfo} = require('./models')
 
 const corsOptions = {
    origin: `http://localhost:4200`,

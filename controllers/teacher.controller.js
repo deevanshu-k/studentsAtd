@@ -53,8 +53,3 @@ module.exports.login = async (req,res) => {
     }
 }
 
-module.exports.getstudents = async (req,res) => {
-    var data = await studentinfo.findAll();
-    console.log(data);
-    res.send(200);
-}

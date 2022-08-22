@@ -13,7 +13,7 @@ const attendence = sequelize.define("attendence", {
      type: DataTypes.STRING,
      allowNull: false
    },
-   subjectcode: {
+   subject_code: {
      type: DataTypes.TEXT,
      allowNull: false
    },
@@ -24,43 +24,10 @@ const attendence = sequelize.define("attendence", {
    date : {
     type: DataTypes.DATEONLY,
     allowNull: false,
+    defaultValue: DataTypes.NOW
    }
 });
 
-attendence.sync({force:false}).then(() => {
-    console.log('attendence information table created!');
-    // attendence.bulkCreate([
-    //   {
-    //     enrollement_no : '0834cs211033',
-    //     class : 'CS-C',
-    //     subjectcode : 'BT203',
-    //     atdstatus : true,
-    //     date : Date.now()
-    //   },
-    //   {
-    //     enrollement_no : '0834cs211034',
-    //     class : 'CS-B',
-    //     subjectcode : 'BT203',
-    //     atdstatus : true,
-    //     date : Date.now()
-    //   },
-    //   {
-    //     enrollement_no : '0834cs211032',
-    //     class : 'CS-D',
-    //     subjectcode : 'BT203',
-    //     atdstatus : true,
-    //     date : Date.now()
-    //   },
-    //   {
-    //     enrollement_no : '0834cs211035',
-    //     class : 'CS-E',
-    //     subjectcode : 'BT203',
-    //     atdstatus : true,
-    //     date : Date.now()
-    //   }
-    // ])
-}).catch((error) => {
-    console.log(error);
-})
+
 
 module.exports = attendence;
