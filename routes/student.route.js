@@ -11,5 +11,6 @@ router.post('/addatd', checkteacherauth ,studentController.addAttendence);
 router.get('/attendences',checkstudentauth,studentController.getstudentwithattendence);
 router.get('/atdbyeno',checkteacherauth,studentController.getstudentwithattendence);
 router.get('/atdbyclass',checkteacherauth,studentController.getAtdByClass);
+router.get('/scodebyeno',checkstudentauth,studentController.getSubCode);
 
 module.exports = router;

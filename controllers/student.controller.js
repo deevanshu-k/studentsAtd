@@ -3,6 +3,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const URL = require('url');
 const attendence = require('../models/attendence');
+const teacherinfo = require('../models/teacher');
 require('dotenv').config();
 
 
@@ -131,7 +132,7 @@ module.exports.getstudents = async (req, res) => {
 module.exports.getstudentwithattendence = async (req, res) => {
     try {
         console.log(req.query);
-        var enrollement_no =  req.body.enrollement_no;
+        var enrollement_no = req.body.enrollement_no;
         if (!enrollement_no) {
             enrollement_no = req.query.enrollement_no;
         }
@@ -171,8 +172,17 @@ module.exports.getstudentwithattendence = async (req, res) => {
 
 module.exports.addAttendence = async (req, res) => {
     try {
+        let subject_code = req.decodedToken.id;
         let data = req.body;
-        let a = await attendence.bulkCreate(data);
+        let dataToBeInserted = [];
+        console.log(data);
+        data.forEach((d) => {
+            if (d.subject_code == subject_code) {
+                dataToBeInserted.push(d);
+            }
+        })
+        console.log(data);
+        let a = await attendence.bulkCreate(dataToBeInserted);
         if (a[0] == undefined) {
             let body = {
                 data: '',
@@ -200,7 +210,7 @@ module.exports.addAttendence = async (req, res) => {
     }
 }
 
-module.exports.getAtdByClass = async (req,res) => {
+module.exports.getAtdByClass = async (req, res) => {
     try {
         var data = await attendence.findAll({
             where: {
@@ -233,4 +243,29 @@ module.exports.getAtdByClass = async (req,res) => {
         res.status(500).send(body);
     }
 
+}
+
+module.exports.getSubCode = async (req, res) => {
+    try {
+        let subcode = [];
+        var data = await teacherinfo.findAll()
+        data.forEach((item) => {
+            if (item.subject_code != 'RT-111') {
+
+                subcode.push(item.subject_code);
+            }
+        })
+        console.log(data);
+        res.send(subcode);
+    } catch (error) {
+        let body = {
+            data: '',
+            status: '0',
+            error: {
+                code: 'UN-ERR',
+                message: "SERVER_ERROR"
+            }
+        }
+        res.status(500).send(body);
+    }
 }
