@@ -66,7 +66,7 @@ export class LoginComponent implements OnInit {
         next: (data:any) => {
           this.ls.set('token',data.data.token);
           var a = this.authServices.getDecodedAccessToken(data.data.token);
-          var exp = Date.now() + (a.exp - a.iat);
+          var exp = Date.now() + (a.exp - a.iat)*1000;
           this.ls.set('exp', `${exp}`);
           this.route.navigate(['/teacher']);
         },

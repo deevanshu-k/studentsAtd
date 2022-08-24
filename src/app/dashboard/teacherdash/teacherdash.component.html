@@ -2,6 +2,9 @@
     <mat-drawer #drawer mode="over" style="width: 250px;">I'm a drawer</mat-drawer>
     <mat-drawer-content>
       <app-header (toggle)="drawer.toggle()" [user]="'Teacher'"></app-header>
+      <div class="container">
+        <app-inputatdcard></app-inputatdcard>
+      </div>
     </mat-drawer-content>
 </mat-drawer-container>
   

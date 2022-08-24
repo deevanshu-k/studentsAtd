@@ -1,19 +1,42 @@
-<mat-card class="example-card" style="min-width: 400px; max-width: 100vw;">
+<mat-card *ngIf="dataSource[0] != undefined" class="example-card d-flex flex-column justify-content-center align-items-center my-4" style="min-width: 300px; max-width: 100vw;">
     <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
       <mat-card-title>Attendence</mat-card-title>
-      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
     </mat-card-header>
-    <mat-card-content>
-      <p>
-        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-        bred for hunting.
-      </p>
+    <mat-card-content style="width: 100%;">
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" style="width: 100%;">
+
+        
+        <!-- Position Column -->
+        <ng-container matColumnDef="subject_code">
+          <th mat-header-cell *matHeaderCellDef class="text-center"> Subject Code </th>
+          <td mat-cell *matCellDef="let element" class="text-center"> {{element.subject_code}} </td>
+        </ng-container>
+      
+        <!-- Name Column -->
+        <ng-container matColumnDef="atd">
+          <th mat-header-cell *matHeaderCellDef class="text-center"> Attendence </th>
+          <td mat-cell *matCellDef="let element" class="text-center"> {{element.atd}} </td>
+        </ng-container>
+      
+        <!-- Weight Column -->
+        <ng-container matColumnDef="status">
+          <th mat-header-cell *matHeaderCellDef class="text-center"> Status </th>
+          <td mat-cell *matCellDef="let element" class="text-center"> {{element.status}} </td>
+        </ng-container>
+      
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="totalAtd">
+          <th mat-header-cell *matHeaderCellDef class="text-center"> Total Attendence</th>
+          <td mat-cell *matCellDef="let element" class="text-center"> {{element.totalAtd}} </td>
+        </ng-container>
+      
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
     </mat-card-content>
-    <mat-card-actions>
+    <!-- <mat-card-actions>
       <button mat-button>LIKE</button>
       <button mat-button>SHARE</button>
-    </mat-card-actions>
+    </mat-card-actions> -->
   </mat-card>
   
