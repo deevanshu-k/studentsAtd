@@ -1,0 +1,412 @@
+{
+    "cs_4" : [
+        {
+            "Sr.No": "1",
+            "Enroll": "0829CS211019",
+            "Student Name": "ALKA Prasad",
+            "Student Mob No.": "9575025853"
+        },
+        {
+            "Sr.No": "2",
+            "Enroll": "0829CS211029",
+            "Student Name": "Anshika solanki",
+            "Student Mob No.": "9165841000"
+        },
+        {
+            "Sr.No": "3",
+            "Enroll": "0829cs211033",
+            "Student Name": "Archita singh",
+            "Student Mob No.": "9336980075"
+        },
+        {
+            "Sr.No": "4",
+            "Enroll": "0829cs211040",
+            "Student Name": "Ayushatre",
+            "Student Mob No.": "8839883239"
+        },
+        {
+            "Sr.No": "5",
+            "Enroll": "0829CS211041",
+            "Student Name": "Ayush jamadiya",
+            "Student Mob No.": "9111870976"
+        },
+        {
+            "Sr.No": "6",
+            "Enroll": "0829CS211073",
+            "Student Name": "Jaysingh Chouhan",
+            "Student Mob No.": "6263037217"
+        },
+        {
+            "Sr.No": "7",
+            "Enroll": "0829CS211074",
+            "Student Name": "Jayveer shakya",
+            "Student Mob No.": "6260346617"
+        },
+        {
+            "Sr.No": "8",
+            "Enroll": "0829cs211078",
+            "Student Name": "Kartik Pawar",
+            "Student Mob No.": "6267357535"
+        },
+        {
+            "Sr.No": "9",
+            "Enroll": "0829CS211080",
+            "Student Name": "Khush Deshmukh",
+            "Student Mob No.": "6263877626"
+        },
+        {
+            "Sr.No": "10",
+            "Enroll": "0829CS211081",
+            "Student Name": "Khushi dubey",
+            "Student Mob No.": "8889549033"
+        },
+        {
+            "Sr.No": "11",
+            "Enroll": "0829CS211086",
+            "Student Name": "krishnakant dave",
+            "Student Mob No.": "8766401840"
+        },
+        {
+            "Sr.No": "12",
+            "Enroll": "0829CS211088",
+            "Student Name": "Kumkum mandloi",
+            "Student Mob No.": "8989773295"
+        },
+        {
+            "Sr.No": "13",
+            "Enroll": "0829CS211096",
+            "Student Name": "Manjeet sharma",
+            "Student Mob No.": "7067853852"
+        },
+        {
+            "Sr.No": "14",
+            "Enroll": "0829CS211097",
+            "Student Name": "Manshi kumari",
+            "Student Mob No.": "8770327532"
+        },
+        {
+            "Sr.No": "15",
+            "Enroll": "0829CS211098",
+            "Student Name": "Manshika Patel",
+            "Student Mob No.": "8120929035"
+        },
+        {
+            "Sr.No": "16",
+            "Enroll": "0829CS211099",
+            "Student Name": "Mansi Dubey",
+            "Student Mob No.": "7898132919"
+        },
+        {
+            "Sr.No": "17",
+            "Enroll": "0829CS211101",
+            "Student Name": "Mansi solanki",
+            "Student Mob No.": "7771040625"
+        },
+        {
+            "Sr.No": "18",
+            "Enroll": "0829CS211106",
+            "Student Name": "Nandkishore birla",
+            "Student Mob No.": "6264446935"
+        },
+        {
+            "Sr.No": "19",
+            "Enroll": "0829cs211107",
+            "Student Name": "Narendra rajput",
+            "Student Mob No.": "7828907323"
+        },
+        {
+            "Sr.No": "20",
+            "Enroll": "0829CS211109",
+            "Student Name": "Neeraj Margare",
+            "Student Mob No.": "7697623645"
+        },
+        {
+            "Sr.No": "21",
+            "Enroll": "0829CS211110",
+            "Student Name": "Nikhil thakur",
+            "Student Mob No.": "8602168845"
+        },
+        {
+            "Sr.No": "22",
+            "Enroll": "0829CS211112",
+            "Student Name": "NITIN BADTIYA",
+            "Student Mob No.": "9770979920"
+        },
+        {
+            "Sr.No": "23",
+            "Enroll": "0829CS211119",
+            "Student Name": "Piyush koushal",
+            "Student Mob No.": "6261098556"
+        },
+        {
+            "Sr.No": "24",
+            "Enroll": "0829CS211129",
+            "Student Name": "Preet Tirkey",
+            "Student Mob No.": "8103973828"
+        },
+        {
+            "Sr.No": "25",
+            "Enroll": "0829CS211130",
+            "Student Name": "Priyamvada Maltare",
+            "Student Mob No.": "9322789021"
+        },
+        {
+            "Sr.No": "26",
+            "Enroll": "0829CS211136",
+            "Student Name": "Raj Singh Chouhan",
+            "Student Mob No.": "7828300306"
+        },
+        {
+            "Sr.No": "27",
+            "Enroll": "0829CS211139",
+            "Student Name": "Rishi Verma",
+            "Student Mob No.": "7999291266"
+        },
+        {
+            "Sr.No": "28",
+            "Enroll": "0829CS211140",
+            "Student Name": "Ritesh Prajapati",
+            "Student Mob No.": "7489186674"
+        },
+        {
+            "Sr.No": "29",
+            "Enroll": "0829CS211145",
+            "Student Name": "Rohit Mahto",
+            "Student Mob No.": "7024279768"
+        },
+        {
+            "Sr.No": "30",
+            "Enroll": "0829CS211148",
+            "Student Name": "Sahil Sarkeja",
+            "Student Mob No.": "9907008547"
+        },
+        {
+            "Sr.No": "31",
+            "Enroll": "0829CS211149",
+            "Student Name": "Sakshi Gawande",
+            "Student Mob No.": "8839802481"
+        },
+        {
+            "Sr.No": "32",
+            "Enroll": "0829CS211154",
+            "Student Name": "Sanskar Solanki",
+            "Student Mob No.": "9179091291"
+        },
+        {
+            "Sr.No": "33",
+            "Enroll": "0829CS211155",
+            "Student Name": "Sejal asati",
+            "Student Mob No.": "9827834508"
+        },
+        {
+            "Sr.No": "34",
+            "Enroll": "0829CS211159",
+            "Student Name": "Shivam Rathore",
+            "Student Mob No.": "7805966223"
+        },
+        {
+            "Sr.No": "35",
+            "Enroll": "0829CS211161",
+            "Student Name": "Shivang lonkar",
+            "Student Mob No.": "9174954600"
+        },
+        {
+            "Sr.No": "36",
+            "Enroll": "0829CS211168",
+            "Student Name": "Shivran Rai",
+            "Student Mob No.": "9589507904"
+        },
+        {
+            "Sr.No": "37",
+            "Enroll": "0829CS211170",
+            "Student Name": "Shrey Patidar",
+            "Student Mob No.": "8962507611"
+        },
+        {
+            "Sr.No": "38",
+            "Enroll": "0829CS211171",
+            "Student Name": "Shubham Mishra",
+            "Student Mob No.": "8962435368"
+        },
+        {
+            "Sr.No": "39",
+            "Enroll": "0829CS211173",
+            "Student Name": "Siddharth bamniya",
+            "Student Mob No.": "8827917970"
+        },
+        {
+            "Sr.No": "40",
+            "Enroll": "0829cs211177",
+            "Student Name": "Sohil patel",
+            "Student Mob No.": "7869967367"
+        },
+        {
+            "Sr.No": "41",
+            "Enroll": "0829CS211183",
+            "Student Name": "Sumit mali",
+            "Student Mob No.": "9993285658"
+        },
+        {
+            "Sr.No": "42",
+            "Enroll": "0829CS211187",
+            "Student Name": "Tanishq Lashkari",
+            "Student Mob No.": "9981757248"
+        },
+        {
+            "Sr.No": "43",
+            "Enroll": "0829CS211188",
+            "Student Name": "Tanuj Singh Bhadoria",
+            "Student Mob No.": "6262969982"
+        },
+        {
+            "Sr.No": "44",
+            "Enroll": "0829CS211192",
+            "Student Name": "Ujjawal Joshi",
+            "Student Mob No.": "7987726656"
+        },
+        {
+            "Sr.No": "45",
+            "Enroll": "0829CS211195",
+            "Student Name": "Vaishnavi Hariyale",
+            "Student Mob No.": "9301240121"
+        },
+        {
+            "Sr.No": "46",
+            "Enroll": "0829CS211197",
+            "Student Name": "Vedika shah",
+            "Student Mob No.": "9977292468"
+        },
+        {
+            "Sr.No": "47",
+            "Enroll": "0829CS211198",
+            "Student Name": "Vijay bhandari",
+            "Student Mob No.": "8269660839"
+        },
+        {
+            "Sr.No": "48",
+            "Enroll": "0829CS211202",
+            "Student Name": "Vivekraj Singh Thakur",
+            "Student Mob No.": "7489260433"
+        },
+        {
+            "Sr.No": "49",
+            "Enroll": "0834CS211004",
+            "Student Name": "Abdul Rahman",
+            "Student Mob No.": "7869328205"
+        },
+        {
+            "Sr.No": "50",
+            "Enroll": "0834CS211005",
+            "Student Name": "Abhay Tiwari",
+            "Student Mob No.": "7879801996"
+        },
+        {
+            "Sr.No": "51",
+            "Enroll": "0834CS211006",
+            "Student Name": "Abhinav sharma",
+            "Student Mob No.": "7089921296"
+        },
+        {
+            "Sr.No": "52",
+            "Enroll": "0834CS211009",
+            "Student Name": "Akshat Panchal",
+            "Student Mob No.": "8659878869"
+        },
+        {
+            "Sr.No": "53",
+            "Enroll": "0834CS211014",
+            "Student Name": "Amit Choudhary",
+            "Student Mob No.": "9644556389"
+        },
+        {
+            "Sr.No": "54",
+            "Enroll": "0834CS211015",
+            "Student Name": "Amit patidar",
+            "Student Mob No.": "6264050742"
+        },
+        {
+            "Sr.No": "55",
+            "Enroll": "0834CS211017",
+            "Student Name": "Amit Trivedi",
+            "Student Mob No.": "7354100947"
+        },
+        {
+            "Sr.No": "56",
+            "Enroll": "0834CS211022",
+            "Student Name": "Aryan singh",
+            "Student Mob No.": "8815860816"
+        },
+        {
+            "Sr.No": "57",
+            "Enroll": "0834CS211030",
+            "Student Name": "Deepak Amlayar",
+            "Student Mob No.": "9516581452"
+        },
+        {
+            "Sr.No": "58",
+            "Enroll": "0834CS211031",
+            "Student Name": "Deepak Kolhe",
+            "Student Mob No.": "8962698543"
+        },
+        {
+            "Sr.No": "59",
+            "Enroll": "0834cs211033",
+            "Student Name": "Deevanshu kushwah",
+            "Student Mob No.": "9826728502"
+        },
+        {
+            "Sr.No": "60",
+            "Enroll": "0834CS211046",
+            "Student Name": "Ishwar Rathore",
+            "Student Mob No.": "6260896808"
+        },
+        {
+            "Sr.No": "61",
+            "Enroll": "0834CS211051",
+            "Student Name": "Krisn ranjan Kumar singh",
+            "Student Mob No.": "6207492338"
+        },
+        {
+            "Sr.No": "62",
+            "Enroll": "0834CS211054",
+            "Student Name": "Laxmi Matholiya",
+            "Student Mob No.": "8966081888"
+        },
+        {
+            "Sr.No": "63",
+            "Enroll": "0834CS211063",
+            "Student Name": "Naveen Mishra",
+            "Student Mob No.": "9340762645"
+        },
+        {
+            "Sr.No": "64",
+            "Enroll": "0834CS211065",
+            "Student Name": "Niharika Chouhan",
+            "Student Mob No.": "8827684712"
+        },
+        {
+            "Sr.No": "65",
+            "Enroll": "0834CS211066",
+            "Student Name": "Nikhil Goyal",
+            "Student Mob No.": "9669043070"
+        },
+        {
+            "Sr.No": "66",
+            "Enroll": "0834CS211107",
+            "Student Name": "Shraddha Mishra",
+            "Student Mob No.": "9109353363"
+        },
+        {
+            "Sr.No": "67",
+            "Enroll": "0834CS211132",
+            "Student Name": "Yash Borse",
+            "Student Mob No.": "8962488825"
+        },
+        {
+            "Sr.No": "68",
+            "Enroll": "0834CS211010",
+            "Student Name": "Akshat Sharma",
+            "Student Mob No.": "7389460629"
+        }
+    ]
+}
