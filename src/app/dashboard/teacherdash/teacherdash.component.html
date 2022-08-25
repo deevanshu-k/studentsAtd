@@ -1,5 +1,12 @@
 <mat-drawer-container class="example-container" hasBackdrop="true" style="height: 100vh;">
-    <mat-drawer #drawer mode="over" style="width: 250px;">I'm a drawer</mat-drawer>
+    <mat-drawer #drawer mode="over" style="width: 250px;">
+      <div class="container-fluid bg-light" style="width: 100%;height: 100%;">
+        <button style="width: 100%;" class="mt-2" (click)="drawer.toggle()" mat-raised-button>Class attendence</button>
+        <button style="width: 100%;" class="mt-2" disabled mat-raised-button>Check attendence</button>
+        <button style="width: 100%;" class="mt-2" disabled mat-raised-button>In Development</button>
+        
+      </div>
+    </mat-drawer>
     <mat-drawer-content>
       <app-header (toggle)="drawer.toggle()" [user]="'Teacher'"></app-header>
       <div class="container">
