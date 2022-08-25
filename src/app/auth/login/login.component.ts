@@ -48,7 +48,7 @@ export class LoginComponent implements OnInit {
           var a = this.authServices.getDecodedAccessToken(data.data.token);
           console.log(a.exp - a.iat);
           
-          var exp = Date.now() + (a.exp - a.iat)*1000;
+          var exp = Date.now() + (a.exp - a.iat)*1000; // *1000 as Date.now return ms and jwt is in second
           this.ls.set('exp', `${exp}`);
           this.route.navigate(['/student']);
         },
@@ -66,7 +66,7 @@ export class LoginComponent implements OnInit {
         next: (data:any) => {
           this.ls.set('token',data.data.token);
           var a = this.authServices.getDecodedAccessToken(data.data.token);
-          var exp = Date.now() + (a.exp - a.iat)*1000;
+          var exp = Date.now() + (a.exp - a.iat)*1000; // *1000 as Date.now return ms and jwt is in second
           this.ls.set('exp', `${exp}`);
           this.route.navigate(['/teacher']);
         },
