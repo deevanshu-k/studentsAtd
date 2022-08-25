@@ -53,3 +53,42 @@ module.exports.login = async (req,res) => {
     }
 }
 
+module.exports.getallstudentsbyclass = async (req,res) => {
+    try {
+        console.log(req.query);
+        var $class = req.body.class;
+        if (!$class) {
+            $class = req.query.class;
+        }
+        let data = await studentinfo.findAll({
+            where : {
+                class : $class
+            }
+        })
+        if (data != null) {
+            res.status(200).send(data);
+        }
+        else {
+            let body = {
+                data: '',
+                status: '0',
+                error: {
+                    code: 'NOT_FOUND',
+                    message: "NOT_FOUND"
+                }
+            }
+            res.status(404).send(body);
+        }
+    } catch (error) {
+        console.log(error);
+        let body = {
+            data: '',
+            status: '0',
+            error: {
+                code: 'ERR_DB',
+                message: "SERVER_ERROR"
+            }
+        }
+        res.status(500).send(body);
+    }
+}
